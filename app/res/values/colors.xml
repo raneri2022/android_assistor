@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#399CFC</color>
+    <color name="purple_700">#57A7FB</color>
+    <color name="purple_500">#2F9DF6</color>
+    <color name="teal_200">#79BCFC</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black_gray">#777777</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red1">#ffff0000</color>
+    <color name="appbg">#EEF5FF</color>
+    <color name="officialblue">#2F9DF6</color>
+    <color name="teal_700">#2C3051</color>
+    <color name="teal_100">#9BA5FF</color>
+    <color name="teal_150">#9BA5FF</color>
+
+    <color name="app_bg">#EEF5FF</color>
+    <color name="blue_dark">#006DFF</color>
+    <color name="gray_dark">#2E2E2E</color>
+    <color name="dark_blue">#00008B</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="bright_blue">#0096FF</color>
+    <color name="dodger_blue">#1E90FF</color>
+    <color name="danger_red">#FC4A68</color>
+    <color name="light_gray">#B3B3B3</color>
+    <color name="success_green">#38BC68</color>
+    <color name="blue_purchase">#76F4FF</color>
+    <color name="blue_dark_purchase">#00C2FF</color>
+    <color name="yellow_dark_purchase">#ACB400</color>
+</resources>

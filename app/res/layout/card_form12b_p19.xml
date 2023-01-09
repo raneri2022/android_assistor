@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/form2_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/delete_btn_p19"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.98"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.01999998"
+                    app:tint="@color/red1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_first_name"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="45dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="45dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/border"
+                                    android:hint="ስም">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ed_first_name_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_middle_name"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="45dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/border"
+                                    android:hint="ስም ኣቦ">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ed_middle_name_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_last_name"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="45dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/border"
+                                    android:hint="ስም ኣቦሓጎ">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ed_last_name_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_relation_with_head"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                    android:layout_width="140dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="45dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:hint="ዝምድና ምስ ሓላፊ ስድራ">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/ed_relation_with_head_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:inputType="none"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:foregroundGravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                                    android:id="@+id/migrated_gender"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="25dp"
+                                    android:foregroundGravity="center"
+                                    android:padding="5dp"
+                                    app:tbgCheckedButton="@+id/migrated_gender_female">
+
+                                    <com.nex3z.togglebuttongroup.button.CircularToggle
+                                        android:id="@+id/migrated_gender_female"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ኣን" />
+
+                                    <com.nex3z.togglebuttongroup.button.CircularToggle
+                                        android:id="@+id/migrated_gender_male"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ተባ" />
+                                </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_age_of_migration"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:hint="ዝፈለሰሉ ዕድመ">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ed_age_of_migration_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:inputType="number"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_year_of_migration"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:hint="ዓመተ ምህረት ዝኸደሉ">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ed_year_of_migration_ed"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:inputType="datetime"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_currently_living_country"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                    android:layout_width="140dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="45dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="45dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/border"
+                                    android:hint="እዋናዊ ዝነብረሉ ዘሎ ሃገር">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/ed_currently_living_country_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:inputType="none"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_currently_living_city"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="45dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/border"
+                                    android:hint="እዋናዊ ዝነብረሉ ዘሎ ከተማ">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/ed_currently_living_city_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:inputType="none"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_current_number_of_daughters_grand_daughters"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="45dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/border"
+                                    android:hint="እዋናዊ ቁጽሪ ደቁን ደቂ ደቁን ኣብ ወጻኢ ዝነብር ዘሎ: ኣን">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ed_current_number_of_daughters_grand_daughters_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ed_current_number_of_sons_grand_sons"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="130dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="45dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:hint="እዋናዊ ቁጽሪ ደቁን ደቂ ደቁን ኣብ ወጻኢ ዝነብር ዘሎ: ተባ">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ed_current_number_of_sons_grand_sons_ed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geezable"
+                                        android:textSize="12sp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/card_number_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/robotocondensedbold"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#F4F8FB"
+                            android:textSize="96sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
